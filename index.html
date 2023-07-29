@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cups/tsp/tbsp converter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app_container" id="optionsContainer">
+      <p class="name">Converter app</p>
+
+      <div class="header_flex">
+        <!-- Добавляем классы для различных размеров инпутов -->
+        <select class="input1 small" name="qty" required>
+          <option value="1/4">1/4</option>
+          <option value="1/3">1/3</option>
+          <option value="1/2">1/2</option>
+          <option value="2/3">2/3</option>
+          <option value="3/4">3/4</option>
+          <option value="1">1</option>
+        </select>
+
+        <input
+          class="input1 medium"
+          name="unit"
+          list="units"
+          placeholder="unit..."
+          required
+        />
+        <datalist id="units">
+          <option value="teaspoon" />
+          <option value="tablespoon" />
+          <option value="cup" />
+          <option value="ounce" />
+          <option value="stick" />
+        </datalist>
+        <input
+          class="input1 large"
+          name="ingredient"
+          list="ingredients"
+          placeholder="ingredient..."
+          required
+        />
+        <datalist id="ingredients">
+          <option value="white sugar" />
+          <option value="brown sugar" />
+          <option value="salt" />
+          <option value="powdered sugar" />
+          <option value="flour" />
+          <option value="water" />
+          <option value="milk" />
+          <option value="eggs" />
+          <option value="butter" />
+          <option value="baking soda" />
+          <option value="cornstarch" />
+          <option value="syrup" />
+          <option value="honey" />
+          <option value="molasses" />
+          <option value="yeast" />
+          <option value="cream cheese" />
+        </datalist>
+        <button class="btn_add">ADD</button>
+      </div>
+    </div>
+
+    <div class="options_container"></div>
+    <script src="script.js"></script>
+  </body>
+</html>

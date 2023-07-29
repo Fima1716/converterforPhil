@@ -1,0 +1,127 @@
+.app_container {
+  width: 100vh;
+  border: 1px solid #000;
+  border-radius: 15px;
+  margin: 0 auto;
+  position: relative;
+  background-image: linear-gradient(
+    to right bottom,
+    #7966ff,
+    #6956e9,
+    #5946d3,
+    #4837bd,
+    #3728a8,
+    #3325a2,
+    #2e219c,
+    #2a1e96,
+    #32269e,
+    #392da5,
+    #4035ad,
+    #473cb5
+  );
+  height: auto;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.header_flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.column_flex {
+  display: flex;
+  flex-direction: column;
+}
+.name {
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+
+.btn_add {
+  display: inline-block;
+  padding: 12px 20px; /* Изменяем размер кнопки по желанию */
+  font-size: 18px; /* Изменяем размер текста на кнопке по желанию */
+  background-color: #0a8df8c0; /* Цвет фона кнопки */
+  color: #fff; /* Цвет текста кнопки */
+  border: none;
+  border-radius: 10px; /* Закругление углов */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Тень для кнопки */
+  cursor: pointer;
+}
+
+.btn_add:hover {
+  background-color: #0d87a5; /* Изменяем цвет фона при наведении */
+}
+
+.btn_add:focus {
+  outline: none; /* Убираем обводку при фокусе */
+}
+
+.input1 {
+  margin: 5px;
+  padding: 10px 15px; /* Изменяем внутренние отступы по желанию */
+  width: 100%;
+  font-size: 16px; /* Изменяем размер текста в полях ввода по желанию */
+  border: 1px solid #ccc; /* Граница поля ввода */
+  border-radius: 8px; /* Закругление углов */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Тень для поля ввода */
+}
+
+/* Убираем внешние границы у списков выбора */
+input[list] {
+  border: none;
+}
+
+/* Стили для placeholder (заменяем стандартный серый цвет) */
+::placeholder {
+  color: #999;
+}
+
+/* Изменяем стили при фокусе на поле ввода */
+.input1:focus {
+  outline: none;
+  border-color: #007bff; /* Изменяем цвет границы при фокусе */
+}
+
+/* Класс для маленького инпута */
+.small {
+  max-width: 150px; /* Выберите нужное значение */
+}
+
+/* Класс для среднего инпута */
+.medium {
+  max-width: 200px; /* Выберите нужное значение */
+}
+
+/* Класс для большого инпута */
+.large {
+  max-width: 300px; /* Выберите нужное значение */
+}
+
+/* Медиа-запросы для адаптивности */
+@media screen and (max-width: 768px) {
+  /* Для экранов шириной до 768 пикселей */
+  .input1 {
+    max-width: 100%; /* Изменяем максимальную ширину, чтобы влезали в узкие экраны */
+  }
+
+  .small {
+    max-width: 100%; /* Можно также убрать ограничение ширины для маленького инпута */
+  }
+
+  .medium {
+    max-width: 100%; /* Изменяем максимальную ширину среднего инпута */
+  }
+
+  .large {
+    max-width: 100%; /* Изменяем максимальную ширину большого инпута */
+  }
+}
+.result {
+  margin: 10px 0;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
